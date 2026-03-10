@@ -1,0 +1,43 @@
+Role: Act as a Senior Front-end Developer and UI/UX Designer specialized in high-end, modern corporate landing pages.
+
+Objective: Build a premium, high-conversion landing page for Batistote Organizações Contábeis (based in Naviraí/MS). The layout must be heavily inspired by the "Dark & High-Tech" aesthetic of https://amcontabilidadeonline.com.br/.
+
+1. Tech Stack:
+
+Framework: HTML5, CSS3 (Tailwind CSS via CDN).
+
+Icons: Lucide Icons.
+
+Typography: Use 'Plus Jakarta Sans' from Google Fonts for a modern, tech-focused feel.
+
+Interactivity: Vanilla JavaScript for scroll animations (Intersection Observer) and mobile menu.
+
+2. Visual Identity & Brand Colors:
+
+Primary Color (Forest Green): #1B5E37 (derived from the brand's logo). Use this for gradients, glowing effects, and primary buttons.
+
+Background: Deep Black (#000000) and Dark Charcoal (#0A0A0A).
+
+UI Style: High contrast, thin borders with low opacity, and Glassmorphism effects.
+
+3. Key Sections (AM Contabilidade Style):
+
+Sticky Navbar: Transparent background with backdrop-blur. Logo on the left, navigation links on the right.
+
+Hero Section: Large bold typography with a text gradient (White to Forest Green). Headline: "Inteligência Contábil para o Sucesso do seu Negócio". Sub-headline about tradition and technology. Add a subtle green "aura" blur in the background.
+
+Service Grid: Interactive cards with glowing borders on hover. Services: "Company Formation", "Tax Planning", "Financial BPO", and "Payroll Services".
+
+Tech Showcase: A dedicated section for the Batistote App featuring a sleek smartphone mockup highlighting "Accounting in the palm of your hand".
+
+Contact & Footer: Clean, dark footer with the office address in Naviraí/MS, social media links, and a functional "Back to Top" button.
+
+4. UX Features:
+
+Scroll Reveal: Smooth fade-in and slide-up animations for all sections.
+
+Micro-interactions: Buttons should have a subtle scale and glow effect on hover.
+
+Mobile First: Ensure the layout is perfectly responsive for smartphones and tablets.
+
+Final Instruction: "Please generate the full code in a single index.html file (or separate CSS/JS files if preferred) and ensure the final product looks like a high-end tech-accounting platform."

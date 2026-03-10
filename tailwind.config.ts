@@ -11,6 +11,9 @@ export default {
         sm: ".1875rem", /* 3px */
       },
       colors: {
+        black: "#000000",
+        charcoal: "#0A0A0A",
+        forest: "#1B5E37",
         // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
@@ -83,7 +86,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Plus Jakarta Sans", "sans-serif"],
+        display: ["Plus Jakarta Sans", "sans-serif"],
         serif: ["var(--font-serif)"],
         mono: ["var(--font-mono)"],
       },

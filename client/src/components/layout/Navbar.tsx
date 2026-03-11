@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, BarChart3 } from "lucide-react";
 import { Link } from "wouter";
+import { ThemeToggle } from "@/components/ThemeProvider";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,27 +61,34 @@ export function Navbar() {
             <button
               key={link.name}
               onClick={() => scrollTo(link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-white transition-colors relative group"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              data-testid={`link-${link.name.toLowerCase()}`}
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </button>
           ))}
+          <ThemeToggle />
           <button 
             onClick={() => scrollTo('#contact')}
-            className="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(27,94,55,0.3)] hover:border-primary/50"
+            className="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 dark:border-white/20 text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(27,94,55,0.3)] hover:border-primary/50 text-foreground dark:text-white"
+            data-testid="button-contact"
           >
             Fale Conosco
           </button>
         </div>
 
-        {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-white p-2"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Menu Toggle & Theme */}
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
+          <button
+            className="text-foreground p-2"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            data-testid="button-mobile-menu"
+          >
+            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -97,7 +105,8 @@ export function Navbar() {
                 <button
                   key={link.name}
                   onClick={() => scrollTo(link.href)}
-                  className="text-left text-lg font-medium text-muted-foreground hover:text-white py-2"
+                  className="text-left text-lg font-medium text-muted-foreground hover:text-foreground py-2"
+                  data-testid={`link-mobile-${link.name.toLowerCase()}`}
                 >
                   {link.name}
                 </button>
@@ -105,6 +114,7 @@ export function Navbar() {
               <button 
                 onClick={() => scrollTo('#contact')}
                 className="mt-4 px-6 py-3 rounded-lg bg-primary text-white font-semibold flex justify-center"
+                data-testid="button-contact-mobile"
               >
                 Fale Conosco
               </button>

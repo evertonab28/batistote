@@ -1,49 +1,7 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Send, Loader2, CheckCircle2 } from "lucide-react";
-import { useSubmitContact } from "@/hooks/use-contact";
-import { useToast } from "@/hooks/use-toast";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: ""
-  });
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  const { mutate, isPending } = useSubmitContact();
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    mutate(formData, {
-      onSuccess: () => {
-        setIsSuccess(true);
-        toast({
-          title: "Mensagem enviada com sucesso!",
-          description: "Entraremos em contato em breve.",
-        });
-        setTimeout(() => {
-          setIsSuccess(false);
-          setFormData({ name: "", email: "", phone: "", message: "" });
-        }, 3000);
-      },
-      onError: (error) => {
-        toast({
-          variant: "destructive",
-          title: "Erro ao enviar",
-          description: error.message,
-        });
-      }
-    });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
   return (
     <section id="contact" className="py-32 relative">
       <div className="max-w-7xl mx-auto px-6">
@@ -101,100 +59,28 @@ export function Contact() {
                   </div>
                 </div>
               </div>
-              
-              {/* map graphic placeholder */}
-              <div className="mt-8 h-32 w-full bg-zinc-900 rounded-xl border border-white/5 relative overflow-hidden flex items-center justify-center opacity-50 group hover:opacity-100 transition-opacity cursor-pointer">
-                {/* stylized map background dark mode Naviraí */}
-                <img 
-                  src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=400&fit=crop" 
-                  alt="Map Location" 
-                  className="absolute inset-0 w-full h-full object-cover opacity-20"
-                />
-                <div className="absolute inset-0 bg-black/60" />
-                <div className="relative flex items-center gap-2 text-white font-medium text-sm">
-                  <MapPin size={16} className="text-primary" /> Ver no Mapa
-                </div>
-              </div>
             </div>
           </motion.div>
 
-          {/* Form */}
+          {/* Map */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <form onSubmit={handleSubmit} className="glass p-8 md:p-10 rounded-2xl flex flex-col gap-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium text-zinc-400">Nome Completo *</label>
-                  <input 
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                    placeholder="João Silva"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium text-zinc-400">E-mail *</label>
-                  <input 
-                    id="email"
-                    name="email"
-                    type="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                    placeholder="joao@empresa.com"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="phone" className="text-sm font-medium text-zinc-400">Telefone / WhatsApp *</label>
-                <input 
-                  id="phone"
-                  name="phone"
-                  required
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all"
-                  placeholder="(67) 99999-9999"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-sm font-medium text-zinc-400">Mensagem *</label>
-                <textarea 
-                  id="message"
-                  name="message"
-                  required
-                  rows={4}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder:text-zinc-600 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all resize-none"
-                  placeholder="Como podemos ajudar sua empresa?"
-                />
-              </div>
-
-              <button 
-                type="submit" 
-                disabled={isPending || isSuccess}
-                className="w-full bg-primary hover:bg-accent text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2 transition-all disabled:opacity-70 disabled:cursor-not-allowed mt-2"
-              >
-                {isPending ? (
-                  <><Loader2 size={20} className="animate-spin" /> Enviando...</>
-                ) : isSuccess ? (
-                  <><CheckCircle2 size={20} /> Mensagem Enviada</>
-                ) : (
-                  <><Send size={20} /> Enviar Mensagem</>
-                )}
-              </button>
-            </form>
+            <div className="glass p-2 rounded-2xl h-full min-h-[400px] overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.416922247924!2d-54.1957416!3d-23.0622268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948bdaf70624000b%3A0x8686623631986423!2sNavira%C3%AD%2C%20MS!5e0!3m2!1spt-BR!2sbr!4v1709825423000!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "400px", borderRadius: "1rem" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+              />
+            </div>
           </motion.div>
         </div>
       </div>

@@ -12,7 +12,6 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('light');
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     // Check localStorage or system preference
@@ -22,7 +21,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const initialTheme = stored || (prefersDark ? 'dark' : 'light');
     setTheme(initialTheme);
     applyTheme(initialTheme);
-    setMounted(true);
   }, []);
 
   const applyTheme = (newTheme: Theme) => {
@@ -40,10 +38,6 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     setTheme(newTheme);
     applyTheme(newTheme);
   };
-
-  if (!mounted) {
-    return <>{children}</>;
-  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

@@ -54,11 +54,11 @@ export function Services() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-primary mb-6 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                <div className="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white dark:text-primary mb-6 group-hover:scale-110 group-hover:bg-white/10 dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">{service.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <p className="text-white dark:text-muted-foreground text-sm leading-relaxed">
                   {service.description}
                 </p>
               </div>

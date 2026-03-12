@@ -3,7 +3,7 @@ import { Smartphone, BellDot, FileText, PieChart, LineChart, Users, ShieldCheck 
 
 export function TechShowcase() {
   return (
-    <section id="tech" className="py-32 bg-charcoal/50 border-y border-white/5 relative overflow-hidden">
+    <section id="tech" className="py-32 bg-slate-50 dark:bg-charcoal/50 border-y border-white/5 relative overflow-hidden">
       {/* Decorative blurry orb */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
@@ -18,16 +18,16 @@ export function TechShowcase() {
             transition={{ duration: 0.6 }}
             className="flex-1"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/30 bg-white/5 text-sm font-medium mb-6">
               <Smartphone size={16} className="text-primary" />
-              <span>Batistote App</span>
+              <span className="text-black dark:text-white">Batistote App</span>
             </div>
             
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-              A contabilidade na palma da sua <span className="text-gradient">mão.</span>
+              A contabilidade na palma da sua <span className="text-primary">mão.</span>
             </h2>
             
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-black dark:text-muted-foreground mb-8">
               Esqueça a papelada. Com nosso aplicativo exclusivo, você tem acesso em tempo real a todas as informações financeiras e fiscais do seu negócio, onde quer que esteja.
             </p>
 
@@ -37,8 +37,8 @@ export function TechShowcase() {
                   <PieChart size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">Dashboards Intuitivos</h4>
-                  <p className="text-sm text-muted-foreground mt-1">Visualize faturamento, despesas e impostos em gráficos fáceis de entender.</p>
+                  <h4 className="text-lg font-bold text-primary dark:text-white">Dashboards Intuitivos</h4>
+                  <p className="text-sm text-black dark:text-muted-foreground mt-1">Visualize faturamento, despesas e impostos em gráficos fáceis de entender.</p>
                 </div>
               </div>
 
@@ -47,8 +47,8 @@ export function TechShowcase() {
                   <FileText size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">Documentos em Nuvem</h4>
-                  <p className="text-sm text-muted-foreground mt-1">Acesse guias, recibos e contratos com um toque, armazenados com total segurança.</p>
+                  <h4 className="text-lg font-bold text-primary dark:text-white">Documentos em Nuvem</h4>
+                  <p className="text-sm text-black dark:text-muted-foreground mt-1">Acesse guias, recibos e contratos com um toque, armazenados com total segurança.</p>
                 </div>
               </div>
 
@@ -57,8 +57,8 @@ export function TechShowcase() {
                   <BellDot size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-white">Notificações Inteligentes</h4>
-                  <p className="text-sm text-muted-foreground mt-1">Seja avisado sobre vencimentos de impostos e pendências antes que se tornem problemas.</p>
+                  <h4 className="text-lg font-bold text-primary dark:text-white">Notificações Inteligentes</h4>
+                  <p className="text-sm text-black dark:text-muted-foreground mt-1">Seja avisado sobre vencimentos de impostos e pendências antes que se tornem problemas.</p>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function TechShowcase() {
             className="flex-1 w-full max-w-md lg:max-w-none flex justify-center relative"
           >
             {/* Phone Frame */}
-            <div className="relative w-[300px] h-[600px] bg-black border-[6px] border-zinc-800 rounded-[3rem] shadow-[0_0_50px_rgba(27,94,55,0.3)] overflow-hidden">
+            <div className="relative w-[300px] h-[600px] bg-black border-[6px] border-zinc-800 rounded-[3rem] shadow-[0_0_50px_rgba(27,94,55,0.5)] overflow-hidden">
               {/* Dynamic Island Notch */}
               <div className="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-7 bg-black rounded-full z-20"></div>
               

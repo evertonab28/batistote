@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, BarChart3 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 import { ThemeToggle } from "@/components/ThemeProvider";
 
@@ -37,8 +37,10 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "glass py-4" : "bg-transparent py-6"
+        isScrolled ? "bg-white py-4 dark:bg-black dark:glass" : "bg-transparent py-6"
       }`}
+
+      //isScrolled ? "glass py-4" : "bg-white py-6"
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
@@ -46,12 +48,18 @@ export function Navbar() {
           className="flex items-center gap-2 cursor-pointer group"
           onClick={() => scrollTo('#home')}
         >
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:shadow-primary/40 transition-all duration-300">
-            <BarChart3 size={20} className="group-hover:scale-110 transition-transform duration-300" />
-          </div>
-          <div>
-            <h1 className="font-bold text-lg leading-tight tracking-tight">Batistote</h1>
-            <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-medium">Contabilidade</p>
+          <div className="h-12 w-auto transition-all duration-300">
+            <img 
+              src={`${import.meta.env.BASE_URL}Logo-BATISTOTE.png`} 
+              alt="Logo Batistote" 
+              className="w-full h-full object-contain dark:hidden" 
+            />
+            {/* Logo para Tema Escuro (Certifique-se que esse arquivo existe na pasta public) */}
+            <img 
+              src={`${import.meta.env.BASE_URL}Logo-BATISTOTE_white.png`} 
+              alt="Logo Batistote Dark" 
+              className="w-full h-full object-contain hidden dark:block" 
+            />
           </div>
         </div>
 
@@ -61,7 +69,7 @@ export function Navbar() {
             <button
               key={link.name}
               onClick={() => scrollTo(link.href)}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors relative group"
+              className="text-sm text-black dark:text-white font-medium hover:text-foreground transition-colors relative group"
               data-testid={`link-${link.name.toLowerCase()}`}
             >
               {link.name}
@@ -71,7 +79,7 @@ export function Navbar() {
           <ThemeToggle />
           <button 
             onClick={() => scrollTo('#contact')}
-            className="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 dark:border-white/20 text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(27,94,55,0.3)] hover:border-primary/50 text-foreground dark:text-white"
+            className="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-primary/30 dark:border-white/20 text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(27,94,55,0.3)] hover:border-primary/50 text-foreground dark:text-white"
             data-testid="button-contact"
           >
             Fale Conosco
@@ -113,7 +121,7 @@ export function Navbar() {
               ))}
               <button 
                 onClick={() => scrollTo('#contact')}
-                className="mt-4 px-6 py-3 rounded-lg bg-primary text-white font-semibold flex justify-center"
+                className="mt-4 px-6 py-3 rounded-lg bg-primary dark:bg-blue-600 text-white font-semibold flex justify-center"
                 data-testid="button-contact-mobile"
               >
                 Fale Conosco

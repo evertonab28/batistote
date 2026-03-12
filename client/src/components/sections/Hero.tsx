@@ -32,7 +32,7 @@ export function Hero() {
           className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary-foreground/90 text-xs font-medium mb-8 uppercase tracking-wider backdrop-blur-sm"
         >
           <Zap size={14} className="text-primary" />
-          <span>Tradição aliada à Inovação</span>
+          <span className="text-black dark:text-white">Tradição aliada à Inovação</span>
         </motion.div>
 
         <motion.h1
@@ -42,7 +42,7 @@ export function Hero() {
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight max-w-5xl leading-[1.1]"
         >
           Inteligência Contábil para o <br className="hidden md:block" />
-          <span className="text-gradient">Sucesso do seu Negócio</span>
+          <span className="text-primary">Sucesso do seu Negócio</span>
         </motion.h1>
 
         <motion.p
@@ -73,7 +73,7 @@ export function Hero() {
           
           <button 
             onClick={() => document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-8 py-4 rounded-xl border border-white/10 hover:bg-white/5 text-white font-medium transition-all"
+            className="px-8 py-4 rounded-xl border border-primary dark:border-white/20 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(27,94,55,0.6)] dark:hover:bg-white/5 text-black dark:text-white font-medium transition-all"
           >
             Nossos Serviços
           </button>

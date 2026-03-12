@@ -19,19 +19,19 @@ export function Contact() {
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-2 space-y-8"
+            className="lg:col-span-2 h-full"
           >
-            <div className="glass p-8 rounded-2xl">
+            <div className="bg-primary dark:glass p-8 rounded-2xl h-full flex flex-col justify-center">
               <h3 className="text-xl font-bold text-white mb-6">Informações de Contato</h3>
               
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
+                  <div className="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
                     <MapPin size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold text-white">Nosso Escritório</p>
-                    <p className="text-muted-foreground text-sm mt-1 leading-relaxed">
+                    <p className="font-black text-white text-lg">Nosso Escritório</p>
+                    <p className="text-white text-sm mt-1 leading-relaxed">
                       Av. Dourados, 123 - Centro<br />
                       Naviraí / MS<br />
                       CEP: 79950-000
@@ -40,22 +40,22 @@ export function Contact() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <Phone size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold text-white">Telefone / WhatsApp</p>
-                    <p className="text-muted-foreground text-sm mt-1">(67) 3461-0000</p>
+                    <p className="font-black text-white text-lg">Telefone / WhatsApp</p>
+                    <p className="text-white text-sm mt-1">(67) 3461-0000</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0">
                     <Mail size={20} />
                   </div>
                   <div>
-                    <p className="font-semibold text-white">E-mail</p>
-                    <p className="text-muted-foreground text-sm mt-1">contato@batistote.com.br</p>
+                    <p className="font-black text-white text-lg">E-mail</p>
+                    <p className="text-white text-sm mt-1">contato@batistote.com.br</p>
                   </div>
                 </div>
               </div>
@@ -67,11 +67,11 @@ export function Contact() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="lg:col-span-3"
+            className="lg:col-span-3 h-full"
           >
-            <div className="glass p-2 rounded-2xl h-full min-h-[400px] overflow-hidden">
+            <div className="border-8 border-primary rounded-2xl h-full min-h-[400px] overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.416922247924!2d-54.1957416!3d-23.0622268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948bdaf70624000b%3A0x8686623631986423!2sNavira%C3%AD%2C%20MS!5e0!3m2!1spt-BR!2sbr!4v1709825423000!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.87485220744!2d-54.2030671129126!3d-23.065049289756857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948b8f3196a5b6fb%3A0x498995025a3774c4!2sBatistote%20Organiza%C3%A7%C3%B5es%20Cont%C3%A1beis!5e0!3m2!1spt-BR!2sbr!4v1773251169829!5m2!1spt-BR!2sbr"
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: "400px", borderRadius: "1rem" }}

@@ -10,18 +10,23 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('light');
+interface ThemeProviderProps {
+  children: React.ReactNode;
+  defaultTheme?: Theme;
+}
+
+export function ThemeProvider({ children, defaultTheme = 'light' }: ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>(defaultTheme);
 
   useEffect(() => {
-    // Check localStorage or system preference
+    // Check localStorage
     const stored = localStorage.getItem('theme') as Theme | null;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    const initialTheme = stored || (prefersDark ? 'dark' : 'light');
+    // Se existir algo salvo, usa. Se não, usa o defaultTheme (que é 'light')
+    const initialTheme = stored || defaultTheme;
     setTheme(initialTheme);
     applyTheme(initialTheme);
-  }, []);
+  }, [defaultTheme]);
 
   const applyTheme = (newTheme: Theme) => {
     const html = document.documentElement;
@@ -60,7 +65,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-lg bg-white/5 dark:bg-white/10 border border-white/10 dark:border-white/20 text-foreground hover:bg-white/10 dark:hover:bg-white/20 transition-all duration-300"
+      className="p-2 rounded-lg bg-white/5 dark:bg-white/10 border border-primary/20 dark:border-white/20 text-foreground hover:bg-primary/5 dark:hover:bg-white/20 transition-all duration-300"
       aria-label="Toggle theme"
       data-testid="button-theme-toggle"
     >

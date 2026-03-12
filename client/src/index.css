@@ -92,7 +92,7 @@
   }
   
   .glass-card {
-    @apply bg-charcoal/80 dark:bg-charcoal/80 backdrop-blur-lg border border-white/5 dark:border-white/5;
+    @apply bg-primary dark:bg-charcoal/80 backdrop-blur-lg border border-white/5 dark:border-white/5;
   }
   
   .text-gradient {

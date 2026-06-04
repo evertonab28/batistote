@@ -4,7 +4,7 @@ import { MessageCircle } from "lucide-react";
 export function WhatsAppButton() {
   // Substitua pelo número real da empresa (Apenas números, com DDI e DDD)
   // Exemplo baseado no seu Contact.tsx: 55 + 67 + telefone
-  const phoneNumber = "556734610000"; 
+  const phoneNumber = "556734614266"; 
   const message = "Olá! Gostaria de mais informações sobre os serviços contábeis.";
   
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;

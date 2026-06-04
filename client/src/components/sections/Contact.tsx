@@ -32,9 +32,9 @@ export function Contact() {
                   <div>
                     <p className="font-black text-white text-lg">Nosso Escritório</p>
                     <p className="text-white text-sm mt-1 leading-relaxed">
-                      Av. Dourados, 123 - Centro<br />
+                      R. Riachuelo, 354 - Centro<br />
                       Naviraí / MS<br />
-                      CEP: 79950-000
+                      CEP: 79947-106
                     </p>
                   </div>
                 </div>
@@ -45,7 +45,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-black text-white text-lg">Telefone / WhatsApp</p>
-                    <p className="text-white text-sm mt-1">(67) 3461-0000</p>
+                    <p className="text-white text-sm mt-1">(67) 3461-4266</p>
                   </div>
                 </div>
 

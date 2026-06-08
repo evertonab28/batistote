@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Contabilidade em Naviraí - MS | Batistote Organizações Contábeis</title>
+    <meta name="author" content="Batistote Organizações Contábeis" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <link rel="alternate" hreflang="pt-BR" href="https://batistote.com.br/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme") || "light";
+        if (theme === "dark") {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="A Batistote Organizações Contábeis oferece serviços de contabilidade, assessoria fiscal, tributária e empresarial em Naviraí - MS."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://batistote.com.br/" />
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Batistote Organizações Contábeis" />
+    <meta property="og:title" content="Contabilidade em Naviraí - MS | Batistote Organizações Contábeis" />
+    <meta
+      property="og:description"
+      content="Serviços de contabilidade, assessoria fiscal, tributária e empresarial em Naviraí - MS."
+    />
+    <meta property="og:url" content="https://batistote.com.br/" />
+    <meta property="og:image" content="https://batistote.com.br/Logo-BATISTOTE.png" />
+    <meta property="og:image:width" content="529" />
+    <meta property="og:image:height" content="126" />
+    <meta property="og:image:alt" content="Batistote Organizações Contábeis - Contabilidade em Naviraí MS" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contabilidade em Naviraí - MS | Batistote Organizações Contábeis" />
+    <meta
+      name="twitter:description"
+      content="Serviços de contabilidade, assessoria fiscal, tributária e empresarial em Naviraí - MS."
+    />
+    <meta name="twitter:image" content="https://batistote.com.br/Logo-BATISTOTE.png" />
+    <meta name="twitter:image:alt" content="Batistote Organizações Contábeis - Contabilidade em Naviraí MS" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AccountingService",
+        "name": "Batistote Organizações Contábeis",
+        "url": "https://batistote.com.br/",
+        "image": "https://batistote.com.br/Logo-BATISTOTE.png",
+        "description": "Serviços de contabilidade, assessoria fiscal, tributária e empresarial em Naviraí - MS.",
+        "telephone": "+55-67-3461-4266",
+        "email": "contato@batistote.com.br",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Riachuelo, 354 - Centro",
+          "addressLocality": "Naviraí",
+          "addressRegion": "MS",
+          "postalCode": "79947-106",
+          "addressCountry": "BR"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Naviraí"
+        },
+        "sameAs": [
+          "https://www.instagram.com/batistote_organizacoes/",
+          "https://www.facebook.com/batistote"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div class="min-h-screen bg-background flex flex-col">
+      <nav
+        id="site-nav"
+        class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent py-6"
+        style="transform: translateY(-100px)"
+      >
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+          <button class="flex items-center gap-2 cursor-pointer group" data-scroll-target="#home" aria-label="Ir para o topo">
+            <div class="h-12 w-auto transition-all duration-300">
+              <img src="./Logo-BATISTOTE.png" alt="Logo Batistote" width="529" height="126" fetchpriority="high" class="w-full h-full object-contain dark:hidden" />
+              <img src="./Logo-BATISTOTE_white.png" alt="Logo Batistote Dark" width="529" height="126" class="w-full h-full object-contain hidden dark:block" />
+            </div>
+          </button>
+
+          <div class="hidden md:flex items-center gap-8">
+            <button class="text-sm text-black dark:text-white font-medium hover:text-foreground transition-colors relative group" data-scroll-target="#home">
+              Início
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            <button class="text-sm text-black dark:text-white font-medium hover:text-foreground transition-colors relative group" data-scroll-target="#services">
+              Serviços
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            <button class="text-sm text-black dark:text-white font-medium hover:text-foreground transition-colors relative group" data-scroll-target="#contact">
+              Contato
+              <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            </button>
+            <button
+              class="p-2 rounded-lg bg-white/5 dark:bg-white/10 border border-primary/20 dark:border-white/20 text-foreground hover:bg-primary/5 dark:hover:bg-white/20 transition-all duration-300"
+              aria-label="Alternar tema"
+              data-theme-toggle
+            >
+              <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+              <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun hidden"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            </button>
+            <button
+              class="px-5 py-2.5 rounded-lg bg-white/5 hover:bg-white/10 border border-primary/30 dark:border-white/20 text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(27,94,55,0.3)] hover:border-primary/50 text-foreground dark:text-white"
+              data-scroll-target="#contact"
+            >
+              Fale Conosco
+            </button>
+          </div>
+
+          <div class="md:hidden flex items-center gap-2">
+            <button
+              class="p-2 rounded-lg bg-white/5 dark:bg-white/10 border border-primary/20 dark:border-white/20 text-foreground hover:bg-primary/5 dark:hover:bg-white/20 transition-all duration-300"
+              aria-label="Alternar tema"
+              data-theme-toggle
+            >
+              <svg data-theme-icon="moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+              <svg data-theme-icon="sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun hidden"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+            </button>
+            <button class="text-foreground p-2" aria-label="Abrir menu" data-mobile-menu-toggle>
+              <svg data-menu-icon="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+              <svg data-menu-icon="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x hidden"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden glass border-t border-white/5 absolute top-full left-0 w-full overflow-hidden hidden">
+          <div class="flex flex-col p-6 gap-4">
+            <button class="text-left text-lg font-medium hover:text-foreground py-2" data-scroll-target="#home">Início</button>
+            <button class="text-left text-lg font-medium hover:text-foreground py-2" data-scroll-target="#services">Serviços</button>
+            <button class="text-left text-lg font-medium hover:text-foreground py-2" data-scroll-target="#contact">Contato</button>
+            <button class="mt-4 px-6 py-3 rounded-lg bg-primary dark:bg-blue-600 text-white font-semibold flex justify-center" data-scroll-target="#contact">
+              Fale Conosco
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-grow">
+        <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+          <div class="absolute inset-0 z-0">
+            <div class="absolute top-[20%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] opacity-60 mix-blend-screen pointer-events-none"></div>
+            <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle at center, white 1px, transparent 1px); background-size: 40px 40px"></div>
+          </div>
+
+          <div class="max-w-7xl mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center mt-12 md:mt-0">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary-foreground/90 text-xs font-medium mb-8 uppercase tracking-wider backdrop-blur-sm" data-animate="fade-up" style="opacity: 0; transform: translateY(20px)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-primary"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
+              <span class="text-black dark:text-white">Tradição aliada à Inovação</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight max-w-5xl leading-[1.1]" data-animate="fade-up" data-animate-delay="100" style="opacity: 0; transform: translateY(20px)">
+              Inteligência Contábil para o <br class="hidden md:block" />
+              <span class="text-primary">Sucesso do seu Negócio</span>
+            </h1>
+
+            <p class="mt-8 text-lg md:text-xl text-muted-foreground max-w-2xl font-light" data-animate="fade-up" data-animate-delay="200" style="opacity: 0; transform: translateY(20px)">
+              Atendimento personalizado em Naviraí/MS com tecnologia de ponta. Transformamos dados complexos em decisões estratégicas claras.
+            </p>
+
+            <div class="mt-12 flex flex-col sm:flex-row items-center gap-4" data-animate="fade-up" data-animate-delay="300" style="opacity: 0; transform: translateY(20px)">
+              <button class="group relative px-8 py-4 bg-primary text-white rounded-xl font-semibold overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(27,94,55,0.4)] hover:shadow-[0_0_30px_rgba(27,94,55,0.6)]" data-scroll-target="#contact">
+                <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+                <span class="relative flex items-center gap-2">
+                  Agende uma Consulta
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right group-hover:translate-x-1 transition-transform"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                </span>
+              </button>
+
+              <button class="px-8 py-4 rounded-xl border border-primary dark:border-white/20 hover:scale-105 active:scale-95 hover:shadow-[0_0_30px_rgba(27,94,55,0.6)] dark:hover:bg-white/5 text-black dark:text-white font-medium transition-all" data-scroll-target="#services">
+                Nossos Serviços
+              </button>
+            </div>
+
+            <div class="mt-10 pt-10 border-t border-white/5 flex flex-wrap justify-center gap-8 text-sm text-muted-foreground w-full max-w-3xl" data-animate="fade-in" data-animate-delay="700" style="opacity: 0">
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <span>Segurança Jurídica</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <span>Conformidade Fiscal</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check text-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                <span>Suporte Humanizado</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="py-24 pt-20 relative">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20" data-reveal="fade-up" style="opacity: 0; transform: translateY(20px)">
+              <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Soluções <span class="text-primary">Especializadas</span></h2>
+              <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Oferecemos um portfólio completo de serviços contábeis para garantir a saúde e o crescimento da sua empresa.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="group relative glass-card p-8 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_10px_30px_rgba(27,94,55,0.15)]" data-reveal="fade-up" data-reveal-delay="0" style="opacity: 0; transform: translateY(30px)">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative z-10">
+                  <div class="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white dark:text-primary mb-6 group-hover:scale-110 group-hover:bg-white/10 dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path><path d="M10 6h4"></path><path d="M10 10h4"></path><path d="M10 14h4"></path><path d="M10 18h4"></path></svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3 text-white">Abertura de Empresas</h3>
+                  <p class="text-white dark:text-muted-foreground text-sm leading-relaxed">
+                    Desburocratizamos o processo para você começar seu negócio com segurança e rapidez. Orientação completa sobre a melhor natureza jurídica.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group relative glass-card p-8 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_10px_30px_rgba(27,94,55,0.15)]" data-reveal="fade-up" data-reveal-delay="100" style="opacity: 0; transform: translateY(30px)">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative z-10">
+                  <div class="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white dark:text-primary mb-6 group-hover:scale-110 group-hover:bg-white/10 dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calculator"><rect width="16" height="20" x="4" y="2" rx="2"></rect><line x1="8" x2="16" y1="6" y2="6"></line><line x1="16" x2="16" y1="14" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3 text-white">Planejamento Tributário</h3>
+                  <p class="text-white dark:text-muted-foreground text-sm leading-relaxed">
+                    Análise inteligente para reduzir legalmente a carga tributária da sua empresa. Estratégias alinhadas à legislação vigente.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group relative glass-card p-8 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_10px_30px_rgba(27,94,55,0.15)]" data-reveal="fade-up" data-reveal-delay="200" style="opacity: 0; transform: translateY(30px)">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative z-10">
+                  <div class="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white dark:text-primary mb-6 group-hover:scale-110 group-hover:bg-white/10 dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-line"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3 text-white">BPO Financeiro</h3>
+                  <p class="text-white dark:text-muted-foreground text-sm leading-relaxed">
+                    Terceirização da gestão financeira. Foque no seu core business enquanto cuidamos do seu fluxo de caixa e contas a pagar/receber.
+                  </p>
+                </div>
+              </div>
+
+              <div class="group relative glass-card p-8 rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:border-primary/50 hover:shadow-[0_10px_30px_rgba(27,94,55,0.15)]" data-reveal="fade-up" data-reveal-delay="300" style="opacity: 0; transform: translateY(30px)">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="relative z-10">
+                  <div class="w-14 h-14 rounded-xl bg-white/5 flex items-center justify-center text-white dark:text-primary mb-6 group-hover:scale-110 group-hover:bg-white/10 dark:group-hover:bg-primary dark:group-hover:text-white transition-all duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3 text-white">Gestão de Departamento Pessoal</h3>
+                  <p class="text-white dark:text-muted-foreground text-sm leading-relaxed">
+                    Cálculo de folha de pagamento, admissões, rescisões e gestão completa de benefícios com total conformidade trabalhista.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="pt-20 relative">
+          <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+              <h2 class="text-3xl md:text-5xl font-bold tracking-tight mb-4">Fale com um <span class="text-primary">Especialista</span></h2>
+              <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Pronto para transformar a gestão contábil da sua empresa? Preencha o formulário e nossa equipe entrará em contato.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-12">
+              <div class="lg:col-span-2 h-full" data-reveal="fade-left" style="opacity: 0; transform: translateX(-30px)">
+                <div class="bg-primary dark:glass p-8 rounded-2xl h-full flex flex-col justify-center">
+                  <h3 class="text-xl font-bold text-white mb-6">Informações de Contato</h3>
+
+                  <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                      <div class="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      </div>
+                      <div>
+                        <p class="font-black text-white text-lg">Nosso Escritório</p>
+                        <address class="text-white text-sm mt-1 leading-relaxed not-italic">
+                          <a
+                            href="https://maps.google.com/?q=R.%20Riachuelo%2C%20354%20-%20Centro%2C%20Navira%C3%AD%20-%20MS%2C%2079947-106"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:underline"
+                          >
+                            R. Riachuelo, 354 - Centro<br />
+                            Naviraí / MS<br />
+                            CEP: 79947-106
+                          </a>
+                        </address>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <div class="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                      </div>
+                      <div>
+                        <p class="font-black text-white text-lg">Telefone / WhatsApp</p>
+                        <p class="text-white text-sm mt-1">
+                          <a href="tel:+556734614266" class="hover:underline">(67) 3461-4266</a>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                      <div class="w-10 h-10 rounded-lg bg-white/70 dark:bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                      </div>
+                      <div>
+                        <p class="font-black text-white text-lg">E-mail</p>
+                        <p class="text-white text-sm mt-1">
+                          <a href="mailto:contato@batistote.com.br" class="hover:underline">contato@batistote.com.br</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lg:col-span-3 h-full" data-reveal="fade-up" style="opacity: 0; transform: translateY(30px)">
+                <div class="border-8 border-primary rounded-2xl h-full min-h-[400px] overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.87485220744!2d-54.2030671129126!3d-23.065049289756857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x948b8f3196a5b6fb%3A0x498995025a3774c4!2sBatistote%20Organiza%C3%A7%C3%B5es%20Cont%C3%A1beis!5e0!3m2!1spt-BR!2sbr!4v1773251169829!5m2!1spt-BR!2sbr"
+                    title="Mapa do escritório Batistote Organizações Contábeis em Naviraí MS"
+                    width="100%"
+                    height="100%"
+                    style="border: 0; min-height: 400px; border-radius: 1rem"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-full opacity-80 hover:opacity-100 transition-opacity"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bg-background border-t border-border pt-16 pb-8 relative">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-border pb-12 mb-8">
+            <div>
+              <h2 class="text-2xl font-bold text-foreground">Batistote</h2>
+              <p class="text-sm text-muted-foreground uppercase tracking-widest font-medium mt-1">Organizações Contábeis</p>
+              <p class="text-muted-foreground text-sm mt-4 max-w-xs">
+                Excelência e inovação em serviços contábeis para empresas que buscam o topo.
+              </p>
+            </div>
+
+            <div class="flex gap-4">
+              <a href="https://www.instagram.com/batistote_organizacoes/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Batistote" class="w-10 h-10 rounded-full bg-secondary border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 hover:border-primary/50 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </a>
+
+              <a href="https://www.facebook.com/batistote" target="_blank" rel="noopener noreferrer" aria-label="Facebook da Batistote" class="w-10 h-10 rounded-full bg-secondary border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-primary/10 hover:border-primary/50 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+            <p>&copy; <span id="current-year"></span> Batistote Contabilidade. Todos os direitos reservados.</p>
+            <div class="flex items-center gap-6">
+              <a href="./politica-de-privacidade.html" class="hover:text-foreground transition-colors">Política de Privacidade</a>
+              <a href="./termos-de-uso.html" class="hover:text-foreground transition-colors">Termos de Uso</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="absolute bottom-8 right-6 w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white shadow-lg hover:bg-accent transition-all hover:-translate-y-1" aria-label="Voltar ao topo" id="back-to-top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg>
+        </button>
+      </footer>
+
+      <a
+        href="https://wa.me/556734614266?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20cont%C3%A1beis."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="fixed bottom-6 right-6 z-50 flex items-center justify-center p-4 bg-[#25D366] text-white rounded-full shadow-[0_4px_14px_0_rgba(37,211,102,0.39)] hover:shadow-[0_6px_20px_rgba(37,211,102,0.23)] hover:bg-[#20bd5a] transition-colors cursor-pointer"
+        aria-label="Fale conosco no WhatsApp"
+        id="whatsapp-button"
+        style="opacity: 0; transform: scale(0)"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle text-white mr-1"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
